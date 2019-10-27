@@ -53,7 +53,7 @@
         <%= section.title %>
       </div>
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
+      <button type="button" class="btn btn-primary btn-lg float-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
         New Lesson...
       </button>
 
@@ -130,10 +130,6 @@
           <%= f.input :title %>
           <%= f.input :subtitle %>
           <%= f.input :video %>
-          <br />
-          <%= f.submit "Add the lesson", class: 'btn btn-primary' %>
-          <br />
-          <br />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
